@@ -1,0 +1,207 @@
+/* Estilos para centrar el título en el header */
+header h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  /* Opcional: Estilos adicionales para el título */
+  header h1 {
+    font-size: 40px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    /* Otros estilos de fuente y diseño que desees */
+  }
+  
+  
+  
+  body {
+    background-color: #e75b64;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  /* Color de fondo de la barra de navegación */
+  .navbar {
+    background-color: #edbbc3;
+  }
+  
+  /* Color del texto de los enlaces de navegación */
+  .navbar-nav .nav-link {
+    color: #313438;
+  }
+  
+  /* Cambia el color del borde inferior al pasar el mouse sobre los enlaces */
+  .navbar-nav .nav-link:hover {
+    background-color:rgb(172, 224, 240);
+    border-bottom: 2px solid #7ed1f3;
+  }
+  
+  h2 {
+    font-family: 'cabin', sans-serif;
+    font-weight: 600;
+    color: #485984;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  h2:hover {
+    color: #495054;
+    border-bottom: 2px solid #474c4f;
+  }
+  
+  /* Estilo para el párrafo */
+  .texto-oscuro {
+    color: #333;
+  }
+  
+  #parrafo-quienes-somos {
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  /* Estilo para el párrafo resaltado */
+  #parrafo-quienes-somos.highlighted {
+    background-color: #2c2d2e;
+    color: #3b3838;
+  }
+  
+  /* Propiedades en venta */
+  #propiedades-venta {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  /* Descripciones de propiedades */
+  .descripcion-propiedad {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el carrusel */
+  #carrusel-venta {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para las flechas de navegación del carrusel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  
+  /* Estilos para las tarjetas de propiedades */
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  /*form */
+  .custom-bg {
+    background-color: rgba(24, 25, 25, 0.8); /* Fondo negro semi-transparente para el formulario */
+    color: #fff; /* Texto en blanco */
+    padding: 30px;
+    border-radius: 10px;
+    
+  }
+  
+  
+  .custom-bg label {
+    color: #a0a0a0; /* Color de etiquetas en gris claro */
+  }
+  
+  .custom-bg textarea,
+  .custom-bg input[type="text"],
+  .custom-bg input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.2); /* Campos de entrada con fondo blanco semi-transparente */
+    color: #fff; /* Texto en blanco */
+  }
+  
+  .custom-bg textarea::placeholder,
+  .custom-bg input[type="text"]::placeholder,
+  .custom-bg input[type="email"]::placeholder {
+    color: #a0a0a0; /* Color de marcador de posición en gris claro */
+  }
+  
+  .custom-bg button[type="submit"] {
+    background-color: #007bff; /* Fondo azul claro para el botón */
+    border-color: #007bff; /* Borde del botón en azul claro */
+  }
+  
+  .custom-bg button[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia el fondo del botón al hacer hover */
+    border-color: #0056b3; /* Cambia el borde del botón al hacer hover */
+  }
+  
+  /* Mensajes de éxito y error */
+  .alert {
+    margin-top: 20px; /* Espacio entre el formulario y los mensajes */
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Estilos específicos para la página de contacto */
+  body.contacto {
+    background-color: #000;
+    color: #fff;
+    /* Otros estilos específicos para la página de contacto */
+  }
+  
+  /* Estilos para las ventanas de alerta */
+  .alert {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: opacity 0.4s;
+  }
+  
+  /* Estilo para el mensaje de éxito */
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  /* Estilo para el mensaje de error */
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
