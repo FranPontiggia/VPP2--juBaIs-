@@ -5,7 +5,7 @@ header h1 {
   /* Opcional: Estilos adicionales para el título */
   header h1 {
     font-size: 40px; /* Tamaño de fuente */
-    color: #fff; /* Color del texto */
+    color: #f658a2; /* Color del texto */
     /* Otros estilos de fuente y diseño que desees */
   }
   
@@ -19,7 +19,7 @@ header h1 {
   }
   /* Color de fondo de la barra de navegación */
   .navbar {
-    background-color: #edbbc3;
+    background-color: #f16f85;
   }
   
   /* Color del texto de los enlaces de navegación */
@@ -34,9 +34,9 @@ header h1 {
   }
   
   h2 {
-    font-family: 'cabin', sans-serif;
+    font-family: 'lora', sans-serif;
     font-weight: 600;
-    color: #485984;
+    color: #f5426b;
     font-size: 28px;
     margin-bottom: 15px;
     text-decoration: none;
@@ -44,7 +44,7 @@ header h1 {
   }
   
   h2:hover {
-    color: #495054;
+    color: #f0bcc4;
     border-bottom: 2px solid #474c4f;
   }
   
@@ -120,7 +120,7 @@ header h1 {
     font-weight: bold;
     color: #007bff;
   }
-  /*form */
+  /*formULARIO DE CONTACTO*/
   .custom-bg {
     background-color: rgba(24, 25, 25, 0.8); /* Fondo negro semi-transparente para el formulario */
     color: #fff; /* Texto en blanco */
@@ -131,7 +131,7 @@ header h1 {
   
   
   .custom-bg label {
-    color: #a0a0a0; /* Color de etiquetas en gris claro */
+    color: #f36980; /* Color de etiquetas en gris claro */
   }
   
   .custom-bg textarea,
