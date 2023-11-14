@@ -15,11 +15,10 @@
     <header class="bg-secondary text-light text-center py-3" style="background-image: url('img/fondo\ 1.png'); background-size: cover;">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-sm-3">
-            <img src="img/" alt="Logo de JuBaIs" class="img-fluid"width="200" height="200">
-          </div>
           <div class="col-sm-12">
-            <h1>JuBaIs</h1>
+            <img src="img/logo ambi rosa.png" alt="Logo de JuBaIs" class="img-fluid"width="200" height="200">
+          </div>
+          
             <h2>Todo lo que necesitas</h2>
           </div>
         </div>
@@ -76,10 +75,10 @@
        <h2 id="hogar" class="text-center">HOGAR</h2>
        <div class="row" id="productosDelHogarContainer">
        <!-- Aquí se generarán las tarjetas -->
-     </div>
+      </div>
 
      <!--primera tarjeta-->
-    <div class="card col-md-5 mx-auto">
+    <div class="card col-md-4 mx-auto">
       <div id="carouselPropiedad1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -102,12 +101,31 @@
           <span class="visually-hidden">Next</span>
          </a>
         </div>
-      <div class="card-body">
-        <h5 class="card-title"> <h1>Pava Eléctrica</h1></h5>
-        <p class="card-text">.Philip. Blanco. Hd9368/00 1,7 Litros</p>
-        <p>200 cuotas de $741</p>
-        <p>100 cuotas de $1.297</p>
-        <p>Un pago de $94.848</p>
-        <p class="card-price"><a href="https://wa.me/2983541686">Comunicate con nosotros <img src="img/wsp1.jpg" alt="wsp 2983541686" width="30" height="30"> </a></p>
-      </div>
-    </div>
+        <div class="card-body">
+          <h5 class="card-title"><h1>Pava Eléctrica</h1></h5>
+          <p class="card-text">.Philip. Blanco. Hd9368/00 1,7 Litros</p>
+          <div class="form-group d-flex align-items-center">
+            <div>
+            <label for="cuotasSelect"><strong>Elige una opción:</strong></label>
+            <select id="cuotasSelect" class="form-select">
+              <option value="200">200 cuotas de $741</option>
+              <option value="100">100 cuotas de $1.297</option>
+              <option value="1">Un pago de $94.848</option>
+            </select>
+          </div>
+            <button id="enviarWhatsapp" class="btn">
+    <img src="img/wsp1.jpg" alt="wsp 2983541686" width="40" height="40">
+
+  </button>
+</div>
+          
+      
+    
+
+
+    
+    
+    
+    
+
+    
