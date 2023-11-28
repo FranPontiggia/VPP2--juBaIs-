@@ -1,24 +1,36 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtén todos los elementos con la clase 'enviarWhatsapp'
+  var enviarWhatsappBtns = document.querySelectorAll('.enviarWhatsapp');
 
-  // JavaScript para manejar el menú desplegable y el botón de enviar a WhatsApp
-  document.addEventListener('DOMContentLoaded', function() {
-    // Obtén elementos del DOM
-    var cuotasSelect = document.getElementById('cuotasSelect');
-    var enviarWhatsappBtn = document.getElementById('enviarWhatsapp');
+  // Itera sobre cada botón de enviar a WhatsApp
+  enviarWhatsappBtns.forEach(function(enviarWhatsappBtn) {
+      // Acción al hacer clic en "Enviar a WhatsApp"
+      enviarWhatsappBtn.addEventListener('click', function() {
+          // Obtén elementos del DOM dentro de cada producto
+          var cuotasSelect = enviarWhatsappBtn.closest('.card-body').querySelector('.form-select');
 
-    // Acción al hacer clic en "Enviar a WhatsApp"
-    enviarWhatsappBtn.addEventListener('click', function() {
-      var selectedCuotas = cuotasSelect.options[cuotasSelect.selectedIndex].text;
+         
+          var producto = enviarWhatsappBtn.getAttribute('data-producto');
+          var numeroWhatsapp = enviarWhatsappBtn.getAttribute('data-numeroWhatsapp');
 
-      if (selectedCuotas) {
-        var numeroWhatsapp = "2983541686";
-        var mensaje = "¡Quiero comprar la Pava Eléctrica en " + selectedCuotas + "!";
-        var url = "https://api.whatsapp.com/send?phone=" + numeroWhatsapp + "&text=" + encodeURIComponent(mensaje);
-        window.location.href = url;
-      } else {
-        alert("Por favor, selecciona una opción de cuotas antes de enviar a WhatsApp.");
-      }
-    });
+          // Obtén el valor seleccionado en el cuadro de selección
+          var selectedCuotas = cuotasSelect.options[cuotasSelect.selectedIndex].text;
+
+          if (selectedCuotas) {
+              // Crea el mensaje personalizado
+              var mensaje = "¡Quiero comprar " + producto + " en " + selectedCuotas + "!";
+              // Construye la URL de WhatsApp
+              var url = "https://api.whatsapp.com/send?phone=" + numeroWhatsapp + "&text=" + encodeURIComponent(mensaje);
+              // Redirige a la URL de WhatsApp
+              window.location.href = url;
+          } else {
+              // Muestra un mensaje de alerta si no se selecciona una opción de cuotas
+              alert("Por favor, selecciona una opción de cuotas antes de enviar a WhatsApp.");
+          }
+      });
   });
+});
+
 
   // Inicializa EmailJS
   (function() {
