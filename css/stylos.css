@@ -62,9 +62,11 @@ header h1 {
     background-color: #2c2d2e;
     color: #3b3838;
   }
+
+  
   
   /* Propiedades en venta */
-  #propiedades-venta {
+  #propieda {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
