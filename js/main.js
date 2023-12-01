@@ -73,3 +73,21 @@ filterForm.addEventListener("submit", function (e) {
   e.preventDefault();
   filterProperties();
 });
+// Funciones relacionadas con el botón "Ir arriba"
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    // Acciones adicionales cuando se desplaza hacia abajo
+  } else {
+    // Acciones adicionales cuando está en la parte superior
+  }
+}
+
+// La función que llevará al usuario al principio de la página
+function topFunction() {
+  document.body.scrollTop = 0; // Para navegadores Safari
+  document.documentElement.scrollTop = 0; // Para otros navegadores
+};
