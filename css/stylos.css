@@ -48,6 +48,17 @@ header h1 {
     border-bottom: 2px solid #474c4f;
   }
   
+  /* Estilo para el targeta de oferta */
+   .custom-btn {
+    background-color: #ff8bbd; /* Color rosa personalizado */
+    color: #ffffff; /* Color del texto blanco */
+    border: 1px solid #ff8bbd; /* Borde rosa personalizado */
+    padding: 8px 16px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Alinea el botón en línea */
+}
+
   /* Estilo para el párrafo */
   .texto-oscuro {
     color: #333;
